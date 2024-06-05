@@ -1,0 +1,4 @@
+
+mutation image_upload($file: Upload!) {
+  image_upload(file: $file)
+}
