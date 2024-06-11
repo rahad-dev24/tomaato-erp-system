@@ -1,0 +1,17 @@
+mutation createStaff(
+  $staffName: String!
+  $staffPassword: String!
+  $staffPhone: String
+  $staffEmail: String
+  $storeCode: String
+) {
+  createStaff(
+    staff_name: $staffName
+    staff_password: $staffPassword
+    staff_phone: $staffPhone
+    staff_email: $staffEmail
+    store_code: $storeCode
+  ) {
+    staff_Id
+  }
+}

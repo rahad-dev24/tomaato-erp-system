@@ -1,0 +1,13 @@
+query sales {
+  sales {
+    sale_Id
+    refunded_order
+    sale_date
+    sale_net_price
+    product_pcs
+    product_Id
+    paid_in_cash
+    customer_Id
+    canceled_order
+  }
+}

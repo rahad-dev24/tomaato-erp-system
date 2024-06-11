@@ -1,0 +1,18 @@
+mutation admin_signIn($adminPassword: String!, $adminPhone: String) {
+  admin_signIn(admin_password: $adminPassword, admin_phone: $adminPhone) {
+    admin_Id
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+}

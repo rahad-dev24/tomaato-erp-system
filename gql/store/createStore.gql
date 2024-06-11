@@ -1,0 +1,15 @@
+mutation createStore(
+  $storeName: String!
+  $storeEmail: String
+  $storeArea: Area
+  $storeCode: String
+) {
+  createStore(
+    store_name: $storeName
+    store_email: $storeEmail
+    store_area: $storeArea
+    store_code: $storeCode
+  ) {
+    store_Id
+  }
+}

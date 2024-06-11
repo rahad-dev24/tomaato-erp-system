@@ -1,0 +1,9 @@
+query getCeos {
+  getCeos {
+    ceo_Id
+    ceo_name
+    ceo_email
+    ceo_phone
+    created_at
+  }
+}

@@ -1,0 +1,5 @@
+mutation staff_signIn($staffPassword: String!, $staffPhone: String) {
+  staff_signIn(staff_password: $staffPassword, staff_phone: $staffPhone) {
+    staff_Id
+  }
+}

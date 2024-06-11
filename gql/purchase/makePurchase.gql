@@ -1,0 +1,31 @@
+mutation makePurchase(
+  $productPricePerPcs: String!
+  $productNetPurchaseQuantity: String!
+  $productNetPurchasePrice: String!
+  $purchasedProductId: String
+  $productPurchaseDate: DateTime
+  $productInStock: String
+  $productManufacturingDate: String
+  $productExpiryDate: String
+  $productMovedToShelf: Boolean
+  $soldOut: Boolean
+  $sellerId: String
+  $buyerStoreId: String
+) {
+  makePurchase(
+    product_price_per_pcs: $productPricePerPcs
+    product_net_purchase_quantity: $productNetPurchaseQuantity
+    product_net_purchase_price: $productNetPurchasePrice
+    purchased_product_Id: $purchasedProductId
+    product_purchase_date: $productPurchaseDate
+    product_in_stock: $productInStock
+    product_manufacturing_date: $productManufacturingDate
+    product_expiry_date: $productExpiryDate
+    product_moved_to_shelf: $productMovedToShelf
+    soldOut: $soldOut
+    seller_Id: $sellerId
+    buyer_store_Id: $buyerStoreId
+  ) {
+    product_purchase_Id
+  }
+}

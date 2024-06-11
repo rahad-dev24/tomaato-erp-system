@@ -1,0 +1,5 @@
+mutation createBrand($brandName: String) {
+  createBrand(brand_name: $brandName) {
+    brand_Id
+  }
+}

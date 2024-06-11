@@ -1,0 +1,9 @@
+mutation ceo_signIn($ceoPassword: String!, $ceoPhone: String) {
+  ceo_signIn(ceo_password: $ceoPassword, ceo_phone: $ceoPhone) {
+    
+
+
+    ceo_Id
+    ceo_phone
+  }
+}

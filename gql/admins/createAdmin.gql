@@ -1,0 +1,15 @@
+mutation createAdmin(
+  $adminName: String!
+  $adminPassword: String!
+  $adminPhone: String
+  $adminEmail: String
+) {
+  createAdmin(
+    admin_name: $adminName
+    admin_password: $adminPassword
+    admin_phone: $adminPhone
+    admin_email: $adminEmail
+  ) {
+    admin_Id
+  }
+}

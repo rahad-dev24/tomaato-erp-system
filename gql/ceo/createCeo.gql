@@ -1,0 +1,15 @@
+mutation createCeo(
+  $ceoName: String!
+  $ceoPassword: String!
+  $ceoPhone: String
+  $ceoEmail: String
+) {
+  createCeo(
+    ceo_name: $ceoName
+    ceo_password: $ceoPassword
+    ceo_phone: $ceoPhone
+    ceo_email: $ceoEmail
+  ) {
+    ceo_Id
+  }
+}

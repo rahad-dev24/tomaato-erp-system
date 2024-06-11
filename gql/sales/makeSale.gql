@@ -1,0 +1,21 @@
+mutation makeSale(
+  $customerId: String!
+  $productId: String!
+  $productPcs: Int!
+  $saleNetPrice: Float!
+  $paidInCash: PayMethod!
+  $canceledOrder: Boolean
+  $refundedOrder: Boolean
+) {
+  makeSale(
+    customer_Id: $customerId
+    product_Id: $productId
+    product_pcs: $productPcs
+    sale_net_price: $saleNetPrice
+    paid_in_cash: $paidInCash
+    canceled_order: $canceledOrder
+    refunded_order: $refundedOrder
+  ) {
+    sale_Id
+  }
+}

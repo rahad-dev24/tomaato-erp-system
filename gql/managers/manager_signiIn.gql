@@ -1,0 +1,8 @@
+mutation manager_signIn($managerPassword: String!, $managerPhone: String) {
+  manager_signIn(
+    manager_password: $managerPassword
+    manager_phone: $managerPhone
+  ) {
+    manager_Id
+  }
+}

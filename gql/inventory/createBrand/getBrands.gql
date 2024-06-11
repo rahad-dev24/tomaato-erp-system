@@ -1,0 +1,6 @@
+query getBrands {
+  getBrands {
+    brand_Id
+    brand_name
+  }
+}

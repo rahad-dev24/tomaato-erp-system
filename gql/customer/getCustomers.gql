@@ -1,0 +1,10 @@
+query getCustomers {
+  allCustomer {
+    customer_Id
+    customer_name
+    customer_email
+    customer_phone
+    customer_area
+    customer_DOB
+  }
+}

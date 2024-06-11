@@ -1,5 +1,0 @@
-query AllCustomer {
-  allCustomer {
-    customer_Id
-  }
-}

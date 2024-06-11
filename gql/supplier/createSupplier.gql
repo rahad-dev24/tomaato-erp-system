@@ -1,0 +1,17 @@
+mutation createSupplier(
+  $supplierName: String!
+  $supplierPhone: String!
+  $supplierStoreName: String!
+  $supplierEmail: String
+) #$supplierArea: Area
+{
+  createSupplier(
+    supplier_name: $supplierName
+    supplier_phone: $supplierPhone
+    supplier_store_name: $supplierStoreName
+    supplier_email: $supplierEmail
+  ) #supplier_area: $supplierArea
+  {
+    supplier_Id
+  }
+}

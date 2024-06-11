@@ -1,0 +1,12 @@
+query products {
+  products {
+    product_Id
+    product_brand_Id
+    product_category_Id
+    product_description
+    product_name
+    product_subcategory_Id
+    product_usages
+    product_weight
+  }
+}

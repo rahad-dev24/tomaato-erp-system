@@ -1,0 +1,21 @@
+mutation createProduct(
+  $productName: String!
+  $productCategoryId: String!
+  $productSubcategoryId: String!
+  $productDescription: String
+  $productWeight: String
+  $productUsages: String
+  $productBrandId: String
+) {
+  createProduct(
+    product_name: $productName
+    product_category_Id: $productCategoryId
+    product_subcategory_Id: $productSubcategoryId
+    product_description: $productDescription
+    product_weight: $productWeight
+    product_usages: $productUsages
+    product_brand_Id: $productBrandId
+  ) {
+    product_Id
+  }
+}

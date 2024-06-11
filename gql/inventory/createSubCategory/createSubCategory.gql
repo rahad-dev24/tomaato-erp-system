@@ -1,0 +1,13 @@
+mutation createSubCategory(
+  $productCategoryId: String!
+  $subcategoryName: String
+  $subcategoryDescription: String
+) {
+  createSubCategory(
+    product_category_Id: $productCategoryId
+    subcategory_name: $subcategoryName
+    subcategory_description: $subcategoryDescription
+  ) {
+    subcategory_Id
+  }
+}

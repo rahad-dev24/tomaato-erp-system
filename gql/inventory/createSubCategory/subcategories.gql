@@ -1,0 +1,7 @@
+query subcategories {
+  subcategories {
+    subcategory_Id
+    subcategory_description
+    subcategory_name
+  }
+}

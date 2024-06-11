@@ -6,6 +6,7 @@ import Nav from "@/components/Nav";
 import Providers from "@/utils/providers";
 import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
+import SideContent from "@/components/SideContent";
 
 export const metadata: Metadata = {
   title: "Tomaato | ERP System",
@@ -31,7 +32,17 @@ export default function RootLayout({
             <header>
               <Nav />
             </header>
-            {children} <footer>footer</footer>
+            <main className="grid grid-cols-12 place-content-center min-h-screen">
+              <aside
+                className={cn(
+                  "border border-r-white bg-[#ff4136] h-screen col-span-2 min-w-40 ",
+                )}
+              >
+                <SideContent />
+              </aside>
+              {children}
+            </main>
+            <footer>footer</footer>
           </ThemeProvider>
         </body>
       </Providers>

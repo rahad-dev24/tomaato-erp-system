@@ -1,0 +1,9 @@
+query stores {
+  stores {
+    store_Id
+    store_area
+    store_code
+    store_email
+    store_name
+  }
+}

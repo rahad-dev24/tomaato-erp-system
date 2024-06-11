@@ -1,0 +1,17 @@
+mutation createManager(
+  $managerName: String!
+  $managerPassword: String!
+  $managerPhone: String
+  $managerEmail: String
+  $storeCode: String
+) {
+  createManager(
+    manager_name: $managerName
+    manager_password: $managerPassword
+    manager_phone: $managerPhone
+    manager_email: $managerEmail
+    store_code: $storeCode
+  ) {
+    manager_Id
+  }
+}

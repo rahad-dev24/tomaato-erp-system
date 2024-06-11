@@ -1,0 +1,8 @@
+query getAllAdmins {
+  getAllAdmins {
+    admin_name
+    admin_phone
+    admin_email
+    created_at
+  }
+}

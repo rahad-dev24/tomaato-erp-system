@@ -1,0 +1,6 @@
+query getCustomer($customerId: String!) {
+  getCustomer(customer_Id: $customerId) {
+    customer_Id
+    customer_name
+  }
+}

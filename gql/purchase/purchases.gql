@@ -1,0 +1,19 @@
+query purchases {
+  purchases {
+    buyer_store_Id
+    createdAt
+    product_expiry_date
+    product_in_stock
+    product_manufacturing_date
+    product_moved_to_shelf
+    product_net_purchase_price
+    product_net_purchase_quantity
+    product_price_per_pcs
+    product_purchase_Id
+    product_purchase_date
+    purchased_product_Id
+    seller_Id
+    soldOut
+    updatedAt
+  }
+}

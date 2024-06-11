@@ -1,0 +1,10 @@
+query getManagers {
+  getManagers {
+    manager_Id
+    manager_name
+    manager_phone
+    manager_email
+    store_code
+    created_at
+  }
+}

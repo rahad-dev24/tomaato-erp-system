@@ -27,7 +27,7 @@ const Nav = () => {
             <Button
               variant={"default"}
               className={cn(
-                "hover:bg-[#007fff] text-black bg-white hover:text-white",
+                "hover:bg-[#007fff] text-black bg-white hover:text-white font-semibold ",
               )}
             >
               Login
@@ -36,7 +36,14 @@ const Nav = () => {
         </li>
         <li>
           <Link href={"/logout"}>
-            <Button variant={"destructive"}>Logout</Button>
+            <Button
+              variant={"default"}
+              className={cn(
+                "text-black bg-white hover:text-white hover:bg-red-500 font-semibold ",
+              )}
+            >
+              Logout
+            </Button>
           </Link>
         </li>
         <ModeToggle />
